@@ -95,9 +95,17 @@ class ApiController extends Portal {
     private function formatMediaUrl(?string $path): ?string {
         if (!$path) return null;
         if (str_starts_with($path, 'http://') || str_starts_with($path, 'https://')) {
+            // Fix existing full URLs that erroneously contain /uploads/assets/
+            if (str_contains($path, '/uploads/assets/')) {
+                return str_replace('/uploads/assets/', '/assets/', $path);
+            }
             return $path;
         }
         $path = ltrim($path, '/');
+        // Fix any paths that have uploads/assets/
+        if (str_starts_with($path, 'uploads/assets/')) {
+            $path = substr($path, 8); // strip 'uploads/'
+        }
         if (!str_starts_with($path, 'uploads/') && !str_starts_with($path, 'assets/')) {
             $path = 'uploads/' . $path;
         }
@@ -110,9 +118,11 @@ class ApiController extends Portal {
     public function bootstrap(): void {
         $lang = $this->getRequestLanguage();
 
-        // News categories
+        // News categories (exclude empty duplicate records)
         $categories = $this->rows("SELECT id, name_en, name_si, name_ta, slug, color, icon, order_index 
-                                  FROM categories WHERE status = 'active' ORDER BY order_index ASC, id ASC");
+                                  FROM categories 
+                                  WHERE status = 'active' AND id NOT IN (8, 9)
+                                  ORDER BY order_index ASC, id ASC");
         $formattedCats = array_map(function($c) use ($lang) {
             return [
                 'id' => (int)$c['id'],
@@ -215,11 +225,25 @@ class ApiController extends Portal {
             $where .= " AND COALESCE(a.gallery_ids, '[]') NOT IN ('', '[]')";
         }
 
-        // Category filter
+        // Category filter (support both numeric ID and slug aliases)
         if ($category !== '') {
             if (is_numeric($category)) {
                 $where .= " AND a.category_id = ?";
                 $params[] = (int)$category;
+            } elseif ($category === 'local' || $category === 'sri-lanka') {
+                $where .= " AND (c.slug IN ('local', 'sri-lanka') OR a.category_id = 1)";
+            } elseif ($category === 'politics') {
+                $where .= " AND (c.slug = 'politics' OR a.category_id = 2)";
+            } elseif ($category === 'business') {
+                $where .= " AND (c.slug = 'business' OR a.category_id = 3)";
+            } elseif ($category === 'sports') {
+                $where .= " AND (c.slug = 'sports' OR a.category_id = 4)";
+            } elseif ($category === 'entertainment' || $category === 'world') {
+                $where .= " AND (c.slug IN ('entertainment', 'world') OR a.category_id = 5)";
+            } elseif ($category === 'technology' || $category === 'tech') {
+                $where .= " AND (c.slug IN ('technology', 'tech') OR a.category_id = 6)";
+            } elseif ($category === 'international') {
+                $where .= " AND (c.slug = 'international' OR a.category_id = 7)";
             } else {
                 $where .= " AND c.slug = ?";
                 $params[] = $category;

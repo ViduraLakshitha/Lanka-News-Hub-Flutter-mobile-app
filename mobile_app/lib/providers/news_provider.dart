@@ -113,10 +113,26 @@ class NewsProvider extends ChangeNotifier {
         cacheDuration: const Duration(minutes: 10),
       );
       final data = res['data'];
-      if (data['categories'] is List) {
-        _categories = (data['categories'] as List)
+      if (data != null && data['categories'] is List) {
+        final rawCats = (data['categories'] as List)
             .map((c) => CategoryModel.fromMap(c as Map<String, dynamic>))
             .toList();
+
+        // Deduplicate and filter out empty duplicate category IDs (8 and 9)
+        final seenNames = <String>{};
+        final cleanList = <CategoryModel>[];
+        for (final cat in rawCats) {
+          if (cat.id == 8 || cat.id == 9) continue; // Skip duplicate dummy records
+
+          final key = cat.nameEn.trim().toLowerCase();
+          if (seenNames.contains(key)) continue;
+          seenNames.add(key);
+          cleanList.add(cat);
+        }
+
+        if (cleanList.isNotEmpty) {
+          _categories = cleanList;
+        }
       }
     } catch (_) {}
   }
@@ -133,7 +149,7 @@ class NewsProvider extends ChangeNotifier {
         'limit': 15,
       };
       if (_selectedCategorySlug != null) {
-        query['category'] = _selectedCategorySlug;
+        query['category'] = CategoryModel.resolveQueryParam(_selectedCategorySlug);
       }
 
       final res = await ApiClient.get(

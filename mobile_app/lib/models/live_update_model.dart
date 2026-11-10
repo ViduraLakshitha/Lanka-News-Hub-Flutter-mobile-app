@@ -1,3 +1,5 @@
+import '../core/utils/media_url_formatter.dart';
+
 class LiveUpdateModel {
   final int id;
   final String slug;
@@ -28,7 +30,7 @@ class LiveUpdateModel {
       publishedAt: map['published_at']?.toString() ?? '',
       isBreaking: map['is_breaking'] == true || map['is_breaking'] == 1,
       categoryName: map['category_name']?.toString() ?? 'News',
-      imageUrl: map['image_url']?.toString(),
+      imageUrl: MediaUrlFormatter.format(map['image_url']?.toString()),
     );
   }
 }

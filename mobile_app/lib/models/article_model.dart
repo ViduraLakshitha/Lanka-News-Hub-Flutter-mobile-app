@@ -1,3 +1,5 @@
+import '../core/utils/media_url_formatter.dart';
+
 class ArticleModel {
   final int id;
   final String slug;
@@ -130,9 +132,9 @@ class ArticleModel {
       categoryName: map['category_name']?.toString() ?? '',
       categorySlug: map['category_slug']?.toString() ?? '',
       categoryColor: map['category_color']?.toString() ?? '#C41230',
-      imageUrl: map['image_url']?.toString(),
+      imageUrl: MediaUrlFormatter.format(map['image_url']?.toString()),
       videoUrl: map['video_url']?.toString(),
-      videoMediaUrl: map['video_media_url']?.toString(),
+      videoMediaUrl: MediaUrlFormatter.format(map['video_media_url']?.toString()),
       isBreaking: map['is_breaking'] == true || map['is_breaking'] == 1,
       isFeatured: map['is_featured'] == true || map['is_featured'] == 1,
       views: map['views'] is int ? map['views'] : int.tryParse(map['views']?.toString() ?? '0') ?? 0,
@@ -191,7 +193,7 @@ class GalleryItem {
   factory GalleryItem.fromMap(Map<String, dynamic> map) {
     return GalleryItem(
       id: map['id'] is int ? map['id'] : int.tryParse(map['id'].toString()) ?? 0,
-      url: map['url']?.toString() ?? '',
+      url: MediaUrlFormatter.format(map['url']?.toString()) ?? '',
       altText: map['alt_text']?.toString() ?? '',
       caption: map['caption']?.toString() ?? '',
     );

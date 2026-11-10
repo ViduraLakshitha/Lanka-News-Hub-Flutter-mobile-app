@@ -27,6 +27,25 @@ class CategoryModel {
     return nameEn.isNotEmpty ? nameEn : name;
   }
 
+  /// Maps category slugs or names to their database category ID where articles live.
+  static String resolveQueryParam(String? slugOrId, [int? id]) {
+    if (id != null && id > 0 && id <= 7) {
+      return id.toString();
+    }
+    if (slugOrId == null || slugOrId.isEmpty) return '';
+    final s = slugOrId.toLowerCase().trim();
+    return switch (s) {
+      'local' || 'sri-lanka' || '1' => '1',
+      'politics' || '2' => '2',
+      'business' || '3' => '3',
+      'sports' || '4' => '4',
+      'entertainment' || 'world' || '5' => '5',
+      'technology' || 'tech' || '6' => '6',
+      'international' || '7' => '7',
+      _ => slugOrId,
+    };
+  }
+
   factory CategoryModel.fromMap(Map<String, dynamic> map) {
     return CategoryModel(
       id: map['id'] is int ? map['id'] : int.tryParse(map['id'].toString()) ?? 0,

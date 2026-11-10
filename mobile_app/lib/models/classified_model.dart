@@ -1,3 +1,5 @@
+import '../core/utils/media_url_formatter.dart';
+
 class ClassifiedModel {
   final int id;
   final int userId;
@@ -58,7 +60,10 @@ class ClassifiedModel {
     if (map['images'] is List) {
       for (final img in map['images'] as List) {
         if (img != null && img.toString().isNotEmpty) {
-          imageList.add(img.toString());
+          final formatted = MediaUrlFormatter.format(img.toString());
+          if (formatted != null && formatted.isNotEmpty) {
+            imageList.add(formatted);
+          }
         }
       }
     }
@@ -79,7 +84,7 @@ class ClassifiedModel {
       contactEmail: map['contact_email']?.toString() ?? '',
       contactPhone: map['contact_phone']?.toString() ?? '',
       images: imageList,
-      thumbnailUrl: map['thumbnail_url']?.toString(),
+      thumbnailUrl: MediaUrlFormatter.format(map['thumbnail_url']?.toString()) ?? (imageList.isNotEmpty ? imageList.first : null),
       status: map['status']?.toString() ?? 'pending',
       moderationNote: map['moderation_note']?.toString(),
       isPremium: map['is_premium'] == true || map['is_premium'] == 1,

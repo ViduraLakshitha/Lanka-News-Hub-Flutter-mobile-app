@@ -46,9 +46,10 @@ class _CategoryNewsScreenState extends State<CategoryNewsScreen> {
     setState(() => _isLoading = true);
 
     try {
+      final categoryParam = CategoryModel.resolveQueryParam(_selectedCategory!.slug, _selectedCategory!.id);
       final res = await ApiClient.get(
         ApiConstants.news,
-        queryParams: {'category': _selectedCategory!.slug, 'limit': 30},
+        queryParams: {'category': categoryParam, 'limit': 30},
         cacheDuration: const Duration(minutes: 5),
       );
       final List raw = res['data'] ?? [];
