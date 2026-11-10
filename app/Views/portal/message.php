@@ -1,0 +1,1 @@
+<?php require __DIR__.'/header.php'; ?><main id="main" class="container page-space"><div class="empty"><span class="eyebrow"><?= http_response_code() ?></span><h1><?= e($title) ?></h1><a href="<?= e(url()) ?>" class="button">Return to news →</a></div></main><?php require __DIR__.'/footer.php'; ?>

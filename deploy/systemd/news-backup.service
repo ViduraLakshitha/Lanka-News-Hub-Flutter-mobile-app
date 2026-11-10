@@ -1,0 +1,15 @@
+[Unit]
+Description=Lanka News Hub Automated Nightly Backup Service
+After=network.target mysql.service
+
+[Service]
+Type=oneshot
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/news_page/current
+ExecStart=/usr/bin/php /var/www/news_page/current/bin/backup.php
+StandardOutput=append:/var/www/news_page/shared/storage/logs/backup.log
+StandardError=append:/var/www/news_page/shared/storage/logs/backup_error.log
+
+[Install]
+WantedBy=multi-user.target

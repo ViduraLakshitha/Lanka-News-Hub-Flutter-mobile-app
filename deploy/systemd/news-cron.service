@@ -1,0 +1,15 @@
+[Unit]
+Description=Lanka News Hub Background Scheduled Task Runner
+After=network.target mysql.service
+
+[Service]
+Type=oneshot
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/news_page/current
+ExecStart=/usr/bin/php /var/www/news_page/current/bin/cron.php
+StandardOutput=append:/var/www/news_page/shared/storage/logs/cron.log
+StandardError=append:/var/www/news_page/shared/storage/logs/cron_error.log
+
+[Install]
+WantedBy=multi-user.target

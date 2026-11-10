@@ -1,0 +1,66 @@
+name: Build Flutter iOS App
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'mobile_app/**'
+      - '.github/workflows/flutter_ios_build.yml'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-ios:
+    name: Build iOS Application (.ipa & Runner.app)
+    runs-on: macos-14
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+          cache-key: "flutter-:os:-:channel:-:version:-:arch:-:hash:"
+
+      - name: Verify Environment
+        run: |
+          flutter --version
+          xcodebuild -version
+
+      - name: Install Dependencies
+        working-directory: mobile_app
+        run: flutter pub get
+
+      - name: Build iOS App (Release, No Code Signing)
+        working-directory: mobile_app
+        run: flutter build ios --release --no-codesign
+
+      - name: Package .ipa Payload
+        working-directory: mobile_app/build/ios/iphoneos
+        run: |
+          mkdir -p Payload
+          cp -r Runner.app Payload/
+          zip -r LankaNewsHub_iOS_Release.ipa Payload
+          zip -r Runner_app.zip Runner.app
+          ls -lh LankaNewsHub_iOS_Release.ipa
+
+      - name: Upload iOS .ipa Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: LankaNewsHub-iOS-Release-IPA
+          path: mobile_app/build/ios/iphoneos/LankaNewsHub_iOS_Release.ipa
+          retention-days: 14
+
+      - name: Upload Runner.app.zip Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: LankaNewsHub-iOS-Runner-App
+          path: mobile_app/build/ios/iphoneos/Runner_app.zip
+          retention-days: 14

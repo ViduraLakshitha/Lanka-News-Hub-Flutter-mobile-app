@@ -1,0 +1,11 @@
+[Unit]
+Description=Lanka News Hub Background Cron Timer (Every 5 Minutes)
+Requires=news-cron.service
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=5min
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,13 @@
+Options -Indexes
+<FilesMatch "(^\.|\.(env|sql|zip|pdf|md|log|sqlite)$)">
+    Require all denied
+</FilesMatch>
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(app|config|database|bin|storage|tests|tmp|\.git|\.codex|\.agents)(/|$) - [F,L,NC]
+    RewriteRule ^$ public/ [L]
+    RewriteCond %{REQUEST_URI} !/public/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>

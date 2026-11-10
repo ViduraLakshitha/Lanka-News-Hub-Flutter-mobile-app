@@ -1,0 +1,460 @@
+================================================================================
+LANKA NEWS HUB — ADMIN DASHBOARD VIDEO SCRIPT & PRESENTER TRANSCRIPT
+Complete Client Onboarding & Editorial Training Guide
+Target Audience : Newsroom Editors, Journalists, Content Managers, Administrators
+Estimated Length: 10 to 12 Minutes
+Target URL      : https://news.liontech.lk/admin
+Resolution      : 1080p Full HD (1920 x 1080) / 60 FPS
+================================================================================
+
+
+--------------------------------------------------------------------------------
+TABLE OF CONTENTS / CHAPTER TIMESTAMPS
+--------------------------------------------------------------------------------
+00:00 - Chapter 1: Introduction & Secure Admin Sign-In
+01:10 - Chapter 2: The Newsroom Dashboard Overview
+02:25 - Chapter 3: Writing & Publishing a News Story (Trilingual, Breaking & Scheduling)
+05:30 - Chapter 4: Media Library & Image Optimization (Auto WebP)
+06:45 - Chapter 5: Managing News Desks & Categories
+07:50 - Chapter 6: Advertising Campaigns & Google AdSense Setup
+09:30 - Chapter 7: Site Settings, Hotline & Language Controls
+10:45 - Chapter 8: Managing People, Roles & Security Logs
+11:40 - Chapter 9: Summary & Editorial Best Practices
+
+
+================================================================================
+SECTION 1: TWO-COLUMN VIDEO PRODUCTION SCRIPT
+(Visual Cues & Simultaneous Voiceover Narration)
+================================================================================
+
+[00:00 - 00:35]
+VISUAL CUE:
+  Title Card: "Lanka News Hub — Newsroom Training".
+  Browser displays homepage (news.liontech.lk). Cursor moves to top right,
+  clicks "Member Account" or navigates to "/admin/login".
+
+PRESENTER NARRATION:
+  "Welcome to the official training guide for the Lanka News Hub newsroom
+   workspace. In this video, we will walk you through every feature of your
+   new online portal—from publishing breaking stories in Sinhala, Tamil,
+   and English, to managing high-resolution photography, controlling digital
+   banner ads, and managing staff roles."
+
+
+[00:35 - 01:10]
+VISUAL CUE:
+  Shows sign-in screen at /admin/login. Cursor enters email and password,
+  toggles the eye icon to verify credentials, and clicks "Sign In".
+
+PRESENTER NARRATION:
+  "To get started, navigate to your website's /admin/login page or click
+   'Member Account' on the main portal. Enter your administrative credentials.
+   If you ever need to inspect what you are typing, use the eye icon to verify
+   your password, then click Sign In."
+
+
+[01:10 - 02:25]
+VISUAL CUE:
+  Screen lands on Editorial Workspace / Overview (/admin). Cursor highlights
+  the top bar, current date, quick metrics (Total Stories, Drafts, Views, Media),
+  and the Recent Stories table. Cursor points to "Visit website" link.
+
+PRESENTER NARRATION:
+  "Once signed in, you arrive at your Editorial Dashboard. At the top, you can
+   see live metrics summarizing your entire publication: how many stories are
+   published, how many drafts are awaiting review, total readership views, and
+   active media assets.
+
+   Below that, the Recent Stories table provides a real-time monitor of your
+   newest articles with live view counts and status badges. In the top right
+   corner, you can click 'Visit website' at any time to open the live public
+   portal in a new tab."
+
+
+[02:25 - 03:15]
+VISUAL CUE:
+  Cursor clicks the red "+ Write a story" button in the top right.
+  The browser opens the Story Editor (/admin/articles/create).
+
+PRESENTER NARRATION:
+  "Now, let's create our first news story. In the top bar or sidebar, click the
+   red button labeled '+ Write a story'. This opens your comprehensive
+   multi-edition story editor."
+
+
+[03:15 - 04:15]
+VISUAL CUE:
+  Cursor zooms in on language tabs: English, Sinhala, and Tamil. Types headline
+  and excerpt in English, switches to Sinhala tab to enter native headline.
+  Shows automatic SEO slug generation below headline.
+
+PRESENTER NARRATION:
+  "Lanka News Hub is built natively for Sri Lankan national readers with full
+   trilingual support. You will see tabs for English, Sinhala, and Tamil. You
+   can publish in just one language, or input all three editions so readers in
+   any language edition see your story seamlessly.
+
+   As you type the headline, notice that the SEO permalink slug is generated
+   automatically, ensuring your articles rank high on Google."
+
+
+[04:15 - 04:55]
+VISUAL CUE:
+  Cursor pastes body copy into content editor. Selects Category dropdown
+  (e.g., Business), checks the "Breaking news" checkbox, and checks "Featured".
+
+PRESENTER NARRATION:
+  "In the body editor, paste or format your story copy. Next, select the
+   appropriate news desk or category from the dropdown—such as Local, Politics,
+   Business, Sports, or Technology.
+
+   If this is an urgent development, check 'Breaking News' to broadcast it
+   immediately on the top 24x7 scrolling ticker. If you want this story to
+   appear as the primary broadsheet headline on the front page, mark it
+   as 'Featured'."
+
+
+[04:55 - 05:30]
+VISUAL CUE:
+  Cursor clicks "Select Media" to attach featured image. Then points to
+  Publication Status dropdown (Draft, Published, Scheduled). Cursor tests
+  "Scheduled" with date picker, sets to "Published", and clicks "Save story".
+  Green notification banner appears: "Story saved."
+
+PRESENTER NARRATION:
+  "Every strong story needs an engaging featured photograph. Click 'Select Media'
+   to pick an image from your library or upload a fresh photo.
+
+   Finally, choose your publication status: select 'Draft' to save work in
+   progress, 'Published' to go live immediately, or 'Scheduled' if you wish to
+   prepare an article in advance for a specific morning or evening release.
+   When ready, click 'Save story'. Your article is instantly indexed and live
+   for your readers."
+
+
+[05:30 - 06:45]
+VISUAL CUE:
+  Cursor clicks "Media library" in the sidebar (/admin/media). Shows image grid.
+  Clicks "Upload files", selects high-res JPG. Upload progress bar completes and
+  image displays WebP badge. Clicks "Copy URL" button.
+
+PRESENTER NARRATION:
+  "Let's explore the Media Library. Here, your newsroom can store high-resolution
+   photography, press release assets, and editorial graphics.
+
+   When you upload large JPEG or PNG files, our backend engine automatically
+   optimizes them and converts them into modern next-generation WebP format.
+   This ensures lightning-fast loading speeds on mobile devices across Sri Lanka.
+
+   Click the 'Copy URL' button on any photo to instantly grab its link for your
+   articles or social media channels. The system also prevents accidental
+   deletion of any image currently in use by an active article."
+
+
+[06:45 - 07:50]
+VISUAL CUE:
+  Cursor clicks "Categories" (/admin/categories). Displays list of desks.
+  Cursor clicks "Edit link", alters sequence order index, and shows fields for
+  Sinhala and Tamil translations.
+
+PRESENTER NARRATION:
+  "Next is Categories. This controls your top newspaper desks—such as Business
+   Wire, Sports Central, and Tech Desk. Here you can adjust display ordering,
+   add new specialized categories, and provide exact translations in Sinhala
+   and Tamil so each language edition of your website maintains flawless native
+   typography."
+
+
+[07:50 - 08:45]
+VISUAL CUE:
+  Cursor clicks "Ad publishing" (/admin/advertisements). Shows 11 placement
+  slots (Leaderboard, Home Hero Right, Story Sidebar, Mid-Content, Sticky Bar).
+  Clicks "+ Create advertisement", enters campaign name, selects slot, chooses
+  format (Image Banner), uploads banner, and clicks Save.
+
+PRESENTER NARRATION:
+  "Now let's examine Ad Publishing—your hub for site monetization. Lanka News
+   Hub features 11 dedicated, responsive ad placements engineered for high
+   click-through rates without disrupting journalistic readability.
+
+   You can create display image banners, native sponsored text articles, or
+   embed custom advertiser script tags. Multiple campaigns in the same placement
+   will automatically rotate in a smooth loop so all sponsors receive fair,
+   equal exposure."
+
+
+[08:45 - 09:30]
+VISUAL CUE:
+  Cursor enables "Ad Placement Preview" mode (?preview_ads=1). Live front page
+  displays all 11 ad slots with dashed inspection guides. Cursor returns to
+  dashboard and pauses/resumes a campaign with 1 click.
+
+PRESENTER NARRATION:
+  "When collaborating with corporate advertisers, you can enable 'Ad Placement
+   Preview'. This highlights all 11 slots simultaneously across the website,
+   allowing your marketing team to verify dimensions and visual hierarchy before
+   going live.
+
+   You can also pause any campaign with a single click, or set expiration dates
+   so seasonal promotions automatically conclude on time."
+
+
+[09:30 - 10:45]
+VISUAL CUE:
+  Cursor clicks "Site & languages" (/admin/settings). Highlights publication
+  name, public contact email, hotline number (011 5 300 800), Language edition
+  checkboxes, and Google AdSense publisher ID input.
+
+PRESENTER NARRATION:
+  "Under Site & Languages, you have global control over your publication's brand
+   identity. You can update the publication name, public editorial email, and
+   hotline phone number displayed across the header and footer.
+
+   You can also toggle language editions on or off dynamically. And if you run
+   Google AdSense, simply paste your Publisher Client ID here. The system injects
+   official Google monetization tags cleanly without needing any developer code
+   changes."
+
+
+[10:45 - 11:40]
+VISUAL CUE:
+  Cursor clicks "People & roles" (/admin/users). Shows staff list with roles:
+  Super Admin, Editor, Reporter, Member. Then clicks "Activity log" (/admin/logs)
+  displaying chronological audit entries.
+
+PRESENTER NARRATION:
+  "Under People & Roles, you can invite new staff members and assign appropriate
+   permissions: Reporters can draft stories, Editors can review and publish
+   across categories, and Super Administrators have full authority over billing
+   and system settings.
+
+   The Activity Log maintains a transparent, tamper-proof record of all editorial
+   actions—recording when stories are published, settings updated, or users
+   signed in."
+
+
+[11:40 - 12:15]
+VISUAL CUE:
+  Screen returns to the clean, public portal (news.liontech.lk) with broadsheet
+  typography, live breaking ticker, and active stories. Outro slide with contact
+  support details.
+
+PRESENTER NARRATION:
+  "That concludes the comprehensive tour of your Lanka News Hub admin workspace.
+   Your team is now equipped to publish breaking journalism, engage readers
+   across all three national languages, and grow your digital publication.
+
+   For ongoing technical support, refer to your documentation or reach out to
+   our team. Thank you, and happy publishing!"
+
+
+
+================================================================================
+SECTION 2: FULL PRESENTER TRANSCRIPT (TELEPROMPTER / SPOKEN READY)
+(Continuous read-out text formatted for teleprompters or voice recording)
+================================================================================
+
+[CHAPTER 1: INTRODUCTION & SECURE ADMIN SIGN-IN]
+
+Welcome to the official video training guide for the Lanka News Hub newsroom
+workspace. In this walkthrough, we will demonstrate how to easily manage and
+publish content on your news portal.
+
+Whether you are publishing a fast-breaking story, adding high-resolution
+photography, scheduling news releases, managing sponsored advertisements,
+or onboarding new journalists, this dashboard gives you total control.
+
+To get started, open your web browser and go to your website address followed
+by /admin/login, or simply click 'Member Account' in the top navigation bar.
+Enter your administrator email and password. If you want to check what you’ve
+typed, click the eye icon to toggle visibility, then press Sign In.
+
+
+[CHAPTER 2: THE NEWSROOM DASHBOARD OVERVIEW]
+
+Once you log in, you are greeted by the Newsroom Overview. This is your mission
+control center.
+
+At the very top, you’ll see live metric cards showing:
+1. Total Published Stories,
+2. Drafts awaiting editorial review,
+3. Total Story Views across all readers, and
+4. Media library items.
+
+Directly below these stats is your Recent Stories table. Here you can see your
+newest articles at a glance, monitor how many views each story is receiving,
+check publication status, and click straight into any story to edit it.
+
+In the upper-right corner, you’ll find the 'Visit website' shortcut, which lets
+you open the public front page in a separate tab to immediately see how your live
+site looks to readers.
+
+
+[CHAPTER 3: WRITING & PUBLISHING A NEWS STORY]
+
+Now let's publish a news story.
+
+In the top right or the left sidebar, click the red '+ Write a story' button.
+This opens the multi-edition story editor.
+
+One of Lanka News Hub's strongest capabilities is full trilingual publishing.
+Notice the three language tabs at the top: English, Sinhala, and Tamil. You can
+publish in a single language, or provide translations across all three editions
+so readers in any language edition enjoy a native experience.
+
+When you enter your article headline, the system automatically builds an
+SEO-friendly URL slug.
+
+Next, add your summary excerpt and paste or type your article body in the content area.
+
+On the right side of the editor, you will configure essential story metadata:
+- News Category: Select the appropriate desk, such as Local, Politics, Business,
+  Sports, Entertainment, or Technology.
+- Breaking News Checkbox: Checking this immediately sends the story to the
+  prominent red 24x7 scrolling ticker at the very top of the site.
+- Featured Story: Select this if you want the article to take prime placement
+  as the main broadsheet hero on the front page.
+- Featured Image: Click 'Select Media' to choose an eye-catching photo from your
+  media shelf or upload a new photo directly.
+
+Before saving, select your Publication Status:
+- Draft: Keeps the article hidden from readers while you write and refine it.
+- Published: Makes the article instantly live across the front page, category
+  pages, and search feeds.
+- Scheduled: Allows you to pick a future date and time in Sri Lanka time. The
+  platform's automated background runner will publish the story at that exact
+  moment without anyone needing to be at their computer.
+- Archived: Unpublishes older stories from the public listing while safely keeping
+  their content and analytics in your records.
+
+When you're finished, click Save story. A confirmation message will appear,
+and your story is published.
+
+
+[CHAPTER 4: MANAGING THE MEDIA LIBRARY]
+
+Next, let’s look at the Media Library in the sidebar.
+
+This is your central vault for all photography, event banners, infographics,
+and press releases.
+
+To add media, simply click Upload files and select images from your computer.
+Our backend media processor automatically compresses your photos and converts
+them into next-generation WebP format. This drastically reduces file size while
+keeping high visual clarity, ensuring rapid page loads for readers on mobile
+networks across Sri Lanka.
+
+Every image card features a Copy URL button, making it effortless to link images
+inside articles. The platform also has built-in safety controls: it will notify
+you and block accidental deletion of any image currently featured in an active
+story or advertisement.
+
+
+[CHAPTER 5: NEWS CATEGORIES & DESKS]
+
+Clicking on Categories brings up the configuration for your main editorial
+desks—such as Business Wire, Sports Central, Tech Desk, and Life & Culture.
+
+Here, you can:
+- Add new categories as your coverage expands,
+- Reorder categories to adjust their sequence in the main navigation bar, and
+- Input Sinhala and Tamil names for each category to ensure native typographic
+  accuracy across all language editions.
+
+
+[CHAPTER 6: AD PUBLISHING & DIGITAL MONETIZATION]
+
+Now, let's explore Ad Publishing, which powers your publication's revenue.
+
+Lanka News Hub comes pre-configured with 11 high-visibility ad placements—including
+the header leaderboard, homepage top banner, in-article mid-content slots,
+sidebar blocks, and the persistent bottom floating bar.
+
+When creating an ad campaign:
+1. Give your campaign a descriptive title.
+2. Choose the target placement from the dropdown.
+3. Select the format: Display Image Banner, Text Sponsorship, or Custom HTML / Script.
+4. Enter your sponsor's destination link and upload the banner asset.
+
+If you have multiple advertisers booked for the same slot, the system automatically
+loops through them in a smooth rotation, giving every sponsor fair exposure.
+
+You can also click 'Ad Placement Preview' to see all 11 ad slots highlighted with
+outline guides across the live website, making it simple to demonstrate placement
+value to potential corporate advertisers.
+
+
+[CHAPTER 7: SITE SETTINGS, HOTLINE & GOOGLE ADSENSE]
+
+Under Site & languages, administrators can configure overall website parameters:
+- Publication Name: Update the brand name displayed across the browser tab and search engines.
+- Public Contact Email & Hotline: Update the hotline phone number (e.g. 011 5 300 800),
+  which updates automatically in the top bar, footer, and support cards.
+- Language Edition Toggles: Enable or disable English, Sinhala, or Tamil editions with
+  a single checkbox.
+- Google AdSense Configuration: If your publication uses AdSense, simply enter your
+  Publisher Client ID here. The system handles all tag insertion safely across desktop
+  and mobile without requiring any code edits.
+
+
+[CHAPTER 8: PEOPLE, ROLES & SECURITY LOGS]
+
+Under People & roles, you can invite journalists, editors, and administrators.
+
+There are distinct user roles:
+- Reporters: Can write and manage their own drafts.
+- Editors: Can review, edit, and publish stories across all desks.
+- Super Administrators: Have complete administrative access, including site settings
+  and staff management.
+
+Finally, the Activity log keeps a clean, time-stamped record of all newsroom activity—
+such as sign-ins, story publications, status changes, and settings updates—giving your
+leadership complete operational transparency.
+
+
+[CHAPTER 9: SUMMARY & CLOSING]
+
+And that completes the training walkthrough for the Lanka News Hub administrative
+dashboard.
+
+With these tools at your fingertips, your newsroom can deliver rapid, high-impact
+journalism to readers across Sri Lanka and worldwide.
+
+If you ever need further assistance, consult your accompanying written reference
+guide or contact our technical support desk. Thank you, and happy publishing!
+
+
+
+================================================================================
+SECTION 3: CLIENT HANDOVER QUICK REFERENCE CHEAT SHEET
+(Printable / Shareable Quick Reference Table)
+================================================================================
+
+TASK                     WHERE TO GO                   KEY ACTION
+-----------------------  ----------------------------  -------------------------------------------------------------
+Write an article         Admin -> News stories ->      Enter English/Sinhala/Tamil title & body, select category,
+                         + Write a story               upload featured image, click "Save story".
+
+Mark Breaking News       Story Editor                  Check "Breaking news" box to push to the red scrolling ticker.
+
+Schedule an article      Story Editor                  Set Status to "Scheduled", pick future Date & Time (SL Time).
+
+Upload photography       Admin -> Media library        Click "Upload files" (auto-optimizes to WebP). Click "Copy URL".
+
+Publish a banner ad      Admin -> Ad publishing        Click "+ Create advertisement", select slot (e.g., sidebar),
+                                                       upload banner, and input destination link.
+
+Inspect all ad slots     Live website                  Add "?preview_ads=1" to any URL to view all 11 placement outlines.
+
+Configure Google AdSense Admin -> Site & languages     Enter Publisher Client ID (ca-pub-XXXXXXXXXXXX) & click Save.
+
+Change phone or email    Admin -> Site & languages     Update "Publication name", "Public contact email", or "Hotline".
+
+Add a new journalist     Admin -> People & roles       Click "Add user", select role (Reporter, Editor, Admin), save.
+
+Change your password     Member Portal (/account)      Enter Current Password, New Password, Confirm, click Update.
+
+================================================================================
+END OF SCRIPT & TRANSCRIPT
+================================================================================
+

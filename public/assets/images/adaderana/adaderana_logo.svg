@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" width="320" height="64">
+  <!-- Red Rounded Square Mark -->
+  <rect x="0" y="2" width="60" height="60" rx="10" ry="10" fill="#c4161c"/>
+  <text x="30" y="27" font-family="'Arial Black', Impact, sans-serif" font-weight="900" font-size="20" fill="#ffffff" text-anchor="middle" letter-spacing="1">ADA</text>
+  <text x="30" y="52" font-family="'Noto Sans Sinhala', 'Iskoola Pota', sans-serif" font-weight="bold" font-size="18" fill="#ffffff" text-anchor="middle">දෙරණ</text>
+  
+  <!-- Text Brand -->
+  <text x="74" y="42" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="34" fill="#c4161c" letter-spacing="-1">adaderana.lk</text>
+  <text x="76" y="58" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="10" fill="#555555" letter-spacing="3">TRUTH FIRST</text>
+</svg>
